@@ -1,0 +1,66 @@
+#cuerpo{
+	background-color:#123e7e; 
+}
+#titulo{text-align:center;font-style:italic;background-color:#5b7294 ;padding: 20px;width: 30%;
+	margin: 0 auto; font-size: 50px;border-radius: 20px;color: black;
+
+}
+#link{margin-left: auto; margin-right: font-style:italic;background-color:#5b7294 ;padding: 10px;width: 25%;margin: 0 auto; 
+	font-size: 30px;border-radius: 30px;color: purple;margin-top: 20px;
+}
+#subtitulo{text-align:center;font-style: italic;color: black;
+}
+#tabla1{
+
+width: 80%; 
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid white; 
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+
+.tabla1 th,
+.tabla1 td {
+    border: 1px solid white; 
+    padding: 15px;
+    text-align: center;
+}
+
+.tabla1 th {
+    background: #555;
+}
+.tabla-tareas td {
+    border: 1px solid white;
+    padding: 15px;
+    vertical-align: top;
+}
+
+.imagen-tabla {
+    width: 100px; 
+    display: block;
+    margin: 0 auto;
+}
+#imgv {
+    width: 120px;
+    margin: 0 auto;
+
+
+
+}
+
+#imgh{ 
+width:200px; height:100 }
+
+#pie{
+    color: black;
+    background:white ;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
