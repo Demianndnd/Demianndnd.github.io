@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Jobs</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+    
+    </style>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: lightblue;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 20px;
+            background-color: white;
+            border-bottom: 2px solid #ccc;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .frame {
+            background-color: #fff;
+            border: 10px solid #c4b89b;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            padding: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .frame:hover {
+            transform: scale(1.02);
+        }
+
+        .frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .caption {
+            text-align: center;
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: 5% auto;
+            display: block;
+            width: 80%;
+            max-width: 800px;
+            border: 5px solid #fff;
+        }
+
+        .close {
+            position: absolute;
+            top: 30px;
+            right: 50px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 700px) {
+            .modal-content {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Galería y cuestionario</h1>
+    </header>
+<table style="margin-left: auto; margin-right: auto; font-style:italic;background-color:aliceblue ;padding: 10px;width: 30%; font-size: 20px;border-radius: 30px;color: black;margin-top: 20px;">
+  <tr>
+    <th><a href="index.html" target="_blank" style="text-align:center;font-style: italic;color: black;">Inicio</a></th>
+  </tr>
+</table>
+    <div class="gallery">
+        <div class="frame" onclick="openModal('img1.jpg')">
+            <img src="imagenes/imagen5.jpg" alt="Obra 1">
+            <div class="caption">Obra 1 - La mejor pagina</div>
+        </div>
+        <div class="frame" onclick="openModal('img2.jpg')">
+            <img src="imagenes/imagen7.jpg" alt="Obra 2">
+            <div class="caption">Obra 2 - photoshop</div>
+        </div>
+        <div class="frame" onclick="openModal('img3.jpg')">
+            <img src="imagenes/imagen8.jpg" alt="Obra 3">
+            <div class="caption">Obra 3 - perfil</div>
+        </div>
+        <div class="frame" onclick="openModal('img4.jpg')">
+            <img src="imagenes/imagen9.jpg" alt="Obra 4">
+            <div class="caption">Obra 4 - </div>
+        </div>
+        <div class="frame" onclick="openModal('img5.jpg')">
+            <img src="imagenes/imagen12.jpg" alt="Obra 5">
+            <div class="caption">Obra 5 - App inventor</div>
+        </div>
+        <div class="frame" onclick="openModal('img6.jpg')">
+            <img src="imagenes/imagen11.jpg" alt="Obra 6">
+            <div class="caption">Obra 6 - programacion</div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="imgModal">
+    </div>
+
+    <script>
+        function openModal(src) {
+            document.getElementById("myModal").style.display = "block";
+            document.getElementById("imgModal").src = src;
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+<iframe src="https://forms.gle/8nfC3iG1uQynxB3QA" 
+        width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">
+
+</div>
+<div
+  style="text-align:left;font-style:italic;background-color:aliceblue ;padding: 50px;width: 60%;margin: 0 auto; font-size: 20px;border-radius: 20px;margin-top: 20px; text-align: center;">Gonzalez Estrada Martin Demian 22190171
+</div>
+
+</body>
+</html>
