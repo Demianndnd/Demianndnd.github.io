@@ -1,0 +1,65 @@
+#cuerpo{
+	background-color: lightblue;
+}
+
+#titulo{
+	text-align:center;font-style:italic;background-color:aliceblue ;padding: 20px;width: 30%;margin: 0 auto; font-size: 50px;
+	border-radius: 20px;
+}
+
+#link{margin-left: auto; margin-right: font-style:italic;background-color:aliceblue ;padding: 10px;width: 50%;margin: 0 auto; 
+	font-size: 20px;border-radius: 30px;color: purple;margin-top: 20px;
+}
+#subtitulo{text-align:center;font-style: italic;color: purple;
+}
+#imagen{width:20%;height: 20; display: block; margin-left: auto; margin-right: auto; margin-top: 20px; border-style: outset;
+
+}
+
+#inicio{text-align:center;font-style:italic;background-color:aliceblue ;padding: 20px;width: 20%;margin: 0 auto;
+ font-size: 20px;border-radius: 20px;margin-top: 20px;
+}
+#texto{text-align:left;font-style:italic;background-color:aliceblue ;padding: 80px;width: 80%;margin: 0 auto; 
+	font-size: 20px;border-radius: 20px;margin-top: 20px;}
+
+#subtitulo1{margin-left: 20px; margin-right: 20px; font-style:italic;background-color:aliceblue ;padding: 10px;width: 20%;margin: 30px; 
+	font-size: 20px;border-radius: 30px;color: white;margin-top: 20px;
+}
+#galeria-contenedor {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-style: italic;
+  color: purple;
+}
+
+#galeria-contenedor h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: purple;
+}
+
+#galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+#galeria img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(128, 0, 128, 0.3);
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#galeria img:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 8px 20px rgba(128, 0, 128, 0.6);
+}
